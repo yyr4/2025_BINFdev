@@ -4,9 +4,6 @@ install.packages('pheatmap')
 # load
 library('pheatmap')
 
-# set wd
-setwd("/scicomp/home-pure/xuz1/tmp/2025_BINFdev/data/")
-
 # set initial 
 set.seed(43)
 data <- matrix(rnorm(500), 50, 10)
