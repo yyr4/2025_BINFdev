@@ -1,6 +1,6 @@
 ## Introduction
 
-This is an example Nextflow workflow to be used as the Technical assessment for the 2025 Bioinformatics Developer Position.
+This is an example Nextflow workflow to be used as the Technical exercise for the 2025 Bioinformatics Developer Position.
 
 1. Read QC ([`FastQC`](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/))
 2. Present QC for raw reads ([`MultiQC`](http://multiqc.info/))
