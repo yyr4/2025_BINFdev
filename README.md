@@ -14,7 +14,7 @@ Now, you can run the pipeline using:
 
 
 ```bash
-nextflow run 2025_BINFdev \
+nextflow run 2025_BINFdev/main.nf \
    -profile <docker/singularity/.../institute> \
    --input samplesheet.csv \
    --outdir <OUTDIR> \
