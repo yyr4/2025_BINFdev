@@ -1,17 +1,17 @@
+# Background
 Please review the README.md and main.nf to understand the orchestration of the pipeline. Any technical questions can be addressed to Samantha Sevilla at the email provided in your application notification.
 
-# Background
 The workflow was generated with nf-core 2.14.1 and Nextflow version 24.04.2.
 
 # Preparation
 1. Create a fork of the repository: https://github.com/slsevilla/2025_BINFdev. All work must be completed in your personal fork. It should not be published or pushed to the main repository.
 
-# Bash assessment
+# Bash Exercise
 1. We would like to deploy the pipeline using the script `run.sh`. This script is not functioning as expected. Create a GitHub issue in your personal repository to address the issue.
 2. Update the `run.sh` script to correct the issue. 
 3. Push all changes to your personal repository.
 
-# Nextflow assessment
+# Nextflow Exercise
 1. We would like to change the resource allocation of the `fastqc` module to have the following, pre-defined resources:
         cpus   = { check_max( 6     * task.attempt, 'cpus'    ) }
         memory = { check_max( 36.GB * task.attempt, 'memory'  ) }
@@ -19,7 +19,7 @@ The workflow was generated with nf-core 2.14.1 and Nextflow version 24.04.2.
 2. Update the appropriate file(s) to change the resource allocation. 
 3. Push all changes to your personal repository.
 
-# Computational assessment
+# Computational Exercise
 1. We would like to visualize the data in the `data` repository. 
 2. Update the R script `create_visualizations.R` to create an appropriate visualization. This will be ran in the module `CREATEHEATMAPS`. Some guidelines:
 
