@@ -14,5 +14,5 @@ if [[ ! -d $outDir ]]; then mkdir -p $outDir; fi
 nextflow run main.nf \
 	-profile $profile \
 	--outdir $outDir \
-    --projectID $projectID \
+ 	--projectID $projectID \
 	-resume
