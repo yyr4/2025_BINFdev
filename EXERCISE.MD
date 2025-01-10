@@ -21,14 +21,13 @@ The workflow was generated with nf-core 2.14.1 and Nextflow version 24.04.2.
 
 # Computational Exercise
 1. We would like to visualize the data in the `data` repository. 
-2. Update the R script `create_Heatmap.R` to create an appropriate visualization. This will be ran in the module `CREATEHEATMAPS`. Some guidelines:
+2. Set the default parameter for `projectID` to be "testProject" instead of "null" in the Nextflow pipeline.
+3. Update the R script `createHeatmap.R` to create appropriate visualizations. This will be ran in the pre-defined module `CREATEHEATMAPS`. Some guidelines:
 
     - You are only required to use the libraries listed in the script. No additional libraries are needed.
 
     - Create a basic heatmap. Genes should be listed as rows, samples as columns. Use a `Euclidean` distance for rows and columns and `ward.D` for the clustering method. Label appropriately. The output should be labeled `basic_heatmap_{projectID}.pdf`.
 
     - Create a complex heatmap using the libraries listed in the script, building off of the basic heatmap. Include the annotation col set to the input annotation data. The annotation colors are defined in the script. Row and column names of annotations should be hidden. Set the legend to break the scale into three bins: low, medium, high. Label appropriately. The output should be labeled `complex_heatmap_{projectID}.pdf`.
-
-3. Set the default parameter for `projectID` to be "testProject" instead of "null".
 
 4. Push all changes to your personal repository. 
