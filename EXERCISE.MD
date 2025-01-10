@@ -21,7 +21,7 @@ The workflow was generated with nf-core 2.14.1 and Nextflow version 24.04.2.
 
 # Computational Exercise
 1. We would like to visualize the data in the `data` repository. 
-2. Update the R script `create_visualizations.R` to create an appropriate visualization. This will be ran in the module `CREATEHEATMAPS`. Some guidelines:
+2. Update the R script `create_Heatmap.R` to create an appropriate visualization. This will be ran in the module `CREATEHEATMAPS`. Some guidelines:
 
     - You are only required to use the libraries listed in the script. No additional libraries are needed.
 
