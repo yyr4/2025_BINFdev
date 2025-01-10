@@ -1,5 +1,5 @@
 # Background
-Please review the README.md and main.nf to understand the orchestration of the pipeline. Any technical questions can be addressed to Samantha Sevilla at the email provided in your application notification.
+Please review the README.md and main.nf to understand the orchestration of the pipeline. Any technical questions can be addressed to Samantha Chill at the email provided in your application notification.
 
 The workflow was generated with nf-core 2.14.1 and Nextflow version 24.04.2.
 
