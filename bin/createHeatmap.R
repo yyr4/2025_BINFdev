@@ -61,8 +61,8 @@ annoColors <- list(
   gene_functions = c("Oxidative_phosphorylation" = "#F46D43",
                      "Cell_cycle" = "#708238",
                      "Immune_regulation" = "#9E0142",
-                     "Signal_transduction" = "beige", 
-                     "Transcription" = "violet"), 
+                     "Signal_transduction" = "beige",
+                     "Transcription" = "violet"),
   Group = c("Disease" = "darkgreen",
             "Control" = "blueviolet"),
   Lymphocyte_count = brewer.pal(5, 'PuBu')
@@ -73,10 +73,40 @@ annoColors <- list(
 ## Create a basic heatmap##
 ################################################
 ################################################
+Basic_file <- paste0("basic_heatmap_", outprefix, ".pdf")
 
+Histogram_basic = pheatmap(sampleData,
+         clustering_distance_cols = 'euclidean',
+         clustering_distance_rows = 'euclidean',
+         clustering_method = 'ward.D',
+         show_colnames     = TRUE,
+         show_rownames     = TRUE,
+         fontsize          = 5,
+         main              = "Basic Gene expression Heatmap",
+         filename = Basic_file )
 
 ################################################
 ################################################
-## Create a basic heatmap##
+## Create a complex heatmap##
 ################################################
 ################################################
+Complex_file <- paste0("complex_heatmap_", outprefix, ".pdf")
+
+Histogram_complex = pheatmap(sampleData,
+                           cluster_rows = T, cluster_cols = T,
+                           clustering_distance_cols = 'euclidean',
+                           clustering_distance_rows = 'euclidean',
+                           clustering_method = 'ward.D',
+                           annotation_col = annoData,
+                           annotation_row = geneFunctions,
+                           annotation_colors = annoColors,
+                           show_colnames     = TRUE,
+                           show_rownames     = TRUE,
+                           annotation_names_row = F,
+                           annotation_names_col = F,
+                           fontsize_row = 10,          # row label font size
+                           fontsize_col = 7,          # column label font size
+                           legend_breaks = c(-2, 0, 2),
+                           legend_labels = c("Low", "Medium", "High"),
+                           main       = "Complex Gene expression Heatmap with annotations colors",
+                           filename = Complex_file)
